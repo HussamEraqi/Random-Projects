@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="30dp"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/log_name"
+        app:layout_constraintEnd_toEndOf="@id/image1"
+        app:layout_constraintStart_toStartOf="@id/image1"
+        app:layout_constraintTop_toBottomOf="@id/image1"
+        android:textSize="24dp"
+        android:textFontWeight="700"
+        android:lineHeight="48dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/tajawall">
+    </TextView>
+
+    <EditText
+        android:id="@+id/input_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="@string/email_hint"
+        android:textColorHint="@color/hint_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginText"
+        android:fontFamily="@font/tajawall"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:paddingRight="10dp"
+
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/input_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="@string/pass_hint"
+        android:textColorHint="@color/hint_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_login"
+        android:fontFamily="@font/tajawall"
+        android:inputType="number"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:paddingRight="10dp"
+        >
+
+    </EditText>
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/input_pass"
+        android:layout_marginTop="28dp"
+        android:text="@string/log_name"
+        android:fontFamily="@font/tajawall"
+        android:background="@drawable/rounded_button_veiw"
+        android:textColor="@color/white"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+
+        >
+
+    </Button>
+    <TextView
+        android:id="@+id/forget_pass_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget_pass"
+        app:layout_constraintTop_toBottomOf="@id/button_1"
+        app:layout_constraintEnd_toEndOf="@id/button_1"
+        app:layout_constraintStart_toStartOf="@id/button_1"
+        android:layout_marginTop="20dp"
+        android:textFontWeight="400"
+        android:fontFamily="@font/tajawall"
+        android:textSize="14sp"
+        android:lineHeight="16.8dp"
+       >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/or_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/tajawall"
+        android:lineHeight="16.8dp"
+        android:padding="13dp"
+        android:text="@string/or_sign_in"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/forget_pass_btn"
+        app:layout_constraintStart_toStartOf="@id/forget_pass_btn"
+        app:layout_constraintTop_toBottomOf="@id/forget_pass_btn">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_face_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_face_login"
+        app:layout_constraintTop_toBottomOf="@id/or_sign"
+        android:layout_marginTop="16dp"
+        android:text="@string/sign_with_face"
+        android:fontFamily="@font/tajawall"
+        android:textColor="@color/white"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        >
+    </Button>
+    <Button
+        android:id="@+id/btn_goolge_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_google_login"
+        app:layout_constraintTop_toBottomOf="@id/btn_face_login"
+        android:layout_marginTop="35dp"
+        android:text="@string/sign_with_face"
+        android:fontFamily="@font/tajawall"
+        android:textColor="@color/white"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        >
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_goolge_login"
+        app:layout_constraintStart_toStartOf="@id/btn_goolge_login"
+        app:layout_constraintEnd_toEndOf="@id/btn_goolge_login"
+        android:text="@string/new_acc"
+        android:paddingTop="28dp"
+        android:fontFamily="@font/tajawall"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:lineHeight="24dp"
+        >
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

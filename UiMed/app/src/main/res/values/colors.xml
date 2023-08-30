@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="hint_color">#ADADAD</color>
+    <color name="button_login_blue">#00569D</color>
+    <color name="button_face_login_color">#367FC0</color>
+    <color name="button_google_login_color">#DD4B39</color>
+</resources>

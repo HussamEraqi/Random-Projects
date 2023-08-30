@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mobile_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/mobile_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+        android:id="@+id/mobile_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type here"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/mobile_view"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/massage_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/massage_text"
+        app:layout_constraintTop_toBottomOf="@id/mobile_edit"
+        app:layout_constraintStart_toStartOf="@id/mobile_view"
+        app:layout_constraintEnd_toEndOf="@id/mobile_view"
+        >
+
+
+        </TextView>
+    <EditText
+        android:id="@+id/massage_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type here"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/massage_view"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Close"
+        app:layout_constraintTop_toBottomOf="@id/massage_edit"
+        app:layout_constraintStart_toStartOf="@id/massage_edit"
+        app:layout_constraintEnd_toEndOf="@id/massage_edit"
+        app:layout_constraintHorizontal_bias=".3"
+        />
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:layout_constraintTop_toBottomOf="@id/massage_edit"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@id/massage_edit"
+        app:layout_constraintStart_toStartOf="@id/massage_edit"
+        app:layout_constraintHorizontal_bias="0.7"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

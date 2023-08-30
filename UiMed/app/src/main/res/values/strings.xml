@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UiMed</string>
+    <string name="log_name">تسجيل الدخول</string>
+    <string name="email_hint">البريد الألكتروني أو رقم الهاتف</string>
+    <string name="pass_hint" >كلمة السر</string>
+    <string name="forget_pass" ><u>هل نسيت كلمة المرور ؟</u></string>
+    <string name="or_sign_in">او سجل عن طريق</string>
+    <string name="sign_with_face">تسجيل عن طريق الفيسبوك</string>
+    <string name="new_acc">ليس لديك حساب ؟<b >تسجيل</b></string>
+
+    <!--    <font size="12dp"></font>-->
+</resources>
