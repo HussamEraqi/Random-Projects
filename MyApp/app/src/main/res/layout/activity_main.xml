@@ -1,47 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    >
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:src="@drawable/ic_android_black_24dp"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/_36sp"
-        android:tint="#971E1E"
-        />
+    tools:context = ".MainActivity">
+
     <TextView
-
-        android:layout_width="match_parent"
+        android:id="@+id/Text_view_1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_30sp"
-        android:text="@string/enter_your_name"
-        android:background="@color/e3b4de"
-        android:layout_margin="@dimen/_10dp"
+        android:background="#15CCBB"
+        android:gravity="center"
         android:padding="@dimen/_10dp"
-        />
-    <EditText
+        android:text="@string/hello_world"
+        android:textSize="@dimen/_25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#BCC5E4"
-        android:padding="@dimen/_10dp"
-        android:layout_margin="@dimen/_10dp"
-        android:inputType="text"
-        android:hint="Type Here"
+        android:layout_height="200dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/Text_view_1"
+        app:layout_constraintEnd_toEndOf="@+id/Text_view_1"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/Text_view_1"
+        app:lottie_rawRes="@raw/anu"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
         />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="@string/submit"
-        />
-
-
-
-
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

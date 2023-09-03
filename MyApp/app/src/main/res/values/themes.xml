@@ -1,9 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MyApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.MyApp" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
     <style name="Theme.MyApp" parent="Base.Theme.MyApp" />
+
+    <style name="Button_1" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/_25sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="Button_1.rounded">
+        <item name="android:background">@drawable/my_button_rounded</item>
+    </style>
+
+    <style name="Button_1.normal">
+        <item name="android:background">@drawable/my_button_normal</item>
+    </style>
+    <style name="circle">
+        <item name="cornerSize">40dp</item>
+    </style>
+
 </resources>

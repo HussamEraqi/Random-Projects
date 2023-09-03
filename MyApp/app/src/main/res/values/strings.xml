@@ -2,4 +2,8 @@
     <string name="app_name">MyApp</string>
     <string name="enter_your_name">Enter Your Name</string>
     <string name="submit">Submit</string>
+    <string name="login">Login</string>
+    <string name="type_here">Type Here</string>
+    <string name="helloworld">HelloWorld</string>
+    <string name="hello_world">Hello World !</string>
 </resources>
